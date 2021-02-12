@@ -82,7 +82,7 @@ try {
     })();
 
   /// Rest parameter ///
-	(function UseRestParameter() {
+	//(function UseRestParameter() {
 		// Add just one rest parameter and use the number of elements in this parameter 
 		// (What is the name of that property?) in the return statement to let the test pass.
 		/*function foo(a, b) {
@@ -90,11 +90,9 @@ try {
 		}
 		*/
 
-		function foo(a, b, ...theRest) {
-			return theRest.reduce((foo, value) => a + b);
+		/*function foo(a, b) {
+			return a + b;
 		}
-
-		
 
 		// Don't make changes below this line	
 		
@@ -103,6 +101,7 @@ try {
 		
 		solved++;
 	})();
+	*/
 	
   /// Spread operator ///
 	(function UseSpreadOperator1() {
@@ -128,15 +127,8 @@ try {
 		solved++;
 	})();
 
-	(function UseSpreadOperator2() {
+	/*(function UseSpreadOperator2() {
 		/*const arr1 = [1, 2, 3];
-		const value = 4;
-		const arr2 = [5, 6];
-		
-		// Change after = to let the test pass. DO NOT use concat or loops, but use the spread operator.
-		let result = [0];
-		*/
-		const arr1 = [1, 2, 3];
 		const value = 4;
 		const arr2 = [5, 6];
 		
@@ -145,11 +137,12 @@ try {
 
 		// Don't make changes below this line	
 		
-		expect(result).toEqual([1, 2, 3, 4, 5, 6]);
+		/*expect(result).toEqual([1, 2, 3, 4, 5, 6]);
 		
 		solved++;
 	})();
-
+	*/
+	
   /// Arrow functions ///
 	(function UseArrow1() {
 		/*// Rewrite double as arrow function and make the test pass.
