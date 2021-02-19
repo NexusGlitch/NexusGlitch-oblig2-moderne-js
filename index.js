@@ -27,6 +27,7 @@ try {
 		var x = 2;
 		}
   	*/
+	   
 	  let x = 1;
 	  if (true) {
 		 let x = 2;
@@ -47,7 +48,7 @@ try {
 	// Rewrite the line below to use template literals.
 	const greeting = 'Hello {who}! {addOne(2)} times.';
 	*/
-
+	  
 	const who = 'World';
 	const addOne = x => x + 1;
 
@@ -68,6 +69,7 @@ try {
 			return 'Hello ' + who + '!';
 		}
 		*/
+	  
 	let hello = (who = 'World') => {
 		return 'Hello ' + who + '!';
 	}
@@ -88,6 +90,7 @@ try {
 		return a + b;
 	}
 	*/
+	  
 	function foo(a, b, ...c) {
 		return a + b + c.length;
 	}
@@ -110,6 +113,7 @@ expect(foo(1, 2, '1st', '2nd', '3rd', '4th')).toBe(1 + 2 + 4);
 	// Use spread operator to let the test pass.
 	let result = add(values);
 	*/
+	  
 	function add(a, b, c) {
 	return a + b + c;
 	}
@@ -131,12 +135,11 @@ expect(foo(1, 2, '1st', '2nd', '3rd', '4th')).toBe(1 + 2 + 4);
 	// Change after = to let the test pass. DO NOT use concat or loops, but use the spread operator.
 	let result = [0];
 	*/
-
+	
 	const arr1 = [1, 2, 3];
 	const value = 4;
 	const arr2 = [5, 6];
 
-	// Change after = to let the test pass. DO NOT use concat or loops, but use the spread operator.
 	let result = [...arr1, 4, ...arr2];
 
 	// Don't make changes below this line	
@@ -152,7 +155,7 @@ expect(foo(1, 2, '1st', '2nd', '3rd', '4th')).toBe(1 + 2 + 4);
 	/*let double = function (x) {
 		return x;
 	};*/ 
-
+	  
 	let double = (x) => {return x+x};
 
 	// Don't make changes below this line	
@@ -165,7 +168,7 @@ expect(foo(1, 2, '1st', '2nd', '3rd', '4th')).toBe(1 + 2 + 4);
 (function UseArrow2() {
 	/* Correct the errors in the arrow function.
 	let add = x, y => return x * y;*/
-
+	
 	let add = (x, y) => {return x+y};
 
 	// Don't make changes below this line	
@@ -228,25 +231,18 @@ expect(foo(1, 2, '1st', '2nd', '3rd', '4th')).toBe(1 + 2 + 4);
 	})();
 
 	(function UseObjectDestructuring1() {
-		/*
 			let obj = {
 			name: 'Oslo',
 			age: 985,
 			add: (x, y) => x + y
 		}
+		/*
 		// Use object destructuring to change the 3 statements below into 1 statement.
 		let name = obj.name;
 		let age = obj.age;
 		let add = obj.add;
 		*/
-
-		let obj = {
-			name: 'Oslo',
-			age: 985,
-			add: (x, y) => x + y
-		}
 		
-		// Use object destructuring to change the 3 statements below into 1 statement.
 		let name = obj.name;
 		let age = obj.age;
 		let add = obj.add;
@@ -266,6 +262,7 @@ expect(foo(1, 2, '1st', '2nd', '3rd', '4th')).toBe(1 + 2 + 4);
   /* // Adjust the code to let the test succeed.
     const a = 'Oslo' + 985;
 	*/
+		
 	const a = ["Oslo", 985];
 	
     // Don't make changes below this line
@@ -283,6 +280,7 @@ expect(foo(1, 2, '1st', '2nd', '3rd', '4th')).toBe(1 + 2 + 4);
     // Adjust the code to let the test succeed.
     /*const a = 'Oslo' + 985;
 	*/
+	  
 	const a = {name:'Oslo', age:985};
 
     // Don't make changes below this line
@@ -310,6 +308,7 @@ expect(foo(1, 2, '1st', '2nd', '3rd', '4th')).toBe(1 + 2 + 4);
 		age: age,
 		dutch: !norwegian
 	};*/
+		
 		let city = {
 		name,
 		age,
